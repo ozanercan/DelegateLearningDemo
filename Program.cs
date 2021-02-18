@@ -7,9 +7,8 @@ namespace DelegeLearningDemo
     {
         static void Main(string[] args)
         {
-            double total = 0;
             var @delegate = new CalculateHandler(Multiply);
-            total = @delegate.Invoke(4, 2, 3);
+            double total = @delegate.Invoke(4, 2, 3);
 
             Console.WriteLine(total);
         }
